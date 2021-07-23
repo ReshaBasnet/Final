@@ -1,0 +1,10 @@
+C:\Users\Dell\source\repos\Component1\Component1\bin\Release\Component1.exe.config
+C:\Users\Dell\source\repos\Component1\Component1\bin\Release\Component1.exe
+C:\Users\Dell\source\repos\Component1\Component1\bin\Release\Component1.pdb
+C:\Users\Dell\source\repos\Component1\Component1\obj\Release\Component1.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\Component1\Component1\obj\Release\Component1.Form.resources
+C:\Users\Dell\source\repos\Component1\Component1\obj\Release\Component1.Properties.Resources.resources
+C:\Users\Dell\source\repos\Component1\Component1\obj\Release\Component1.csproj.GenerateResource.cache
+C:\Users\Dell\source\repos\Component1\Component1\obj\Release\Component1.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\Component1\Component1\obj\Release\Component1.exe
+C:\Users\Dell\source\repos\Component1\Component1\obj\Release\Component1.pdb

@@ -1,0 +1,408 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Component1</name>
+    </assembly>
+    <members>
+        <member name="T:Component1.BasicShapes">
+            <summary>
+            Gives the shapes of the object
+            </summary>
+        </member>
+        <member name="M:Component1.BasicShapes.#ctor(System.Drawing.Color,System.Int32,System.Int32)">
+            <summary>
+            holds the color , x- coordinate and y-coordinate
+            </summary>
+            <param name="colour"> sets the color</param>
+            <param name="x"> sets the c-ordinate</param>
+            <param name="y"> sets the y-coordinate</param>
+        </member>
+        <member name="M:Component1.BasicShapes.draw(System.Drawing.Graphics)">
+            <summary>
+            draws the shape of object
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="M:Component1.BasicShapes.ToString">
+            <summary>
+            used to overwite the values
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Component1.Circle">
+            <summary>
+            has commands of the class circle 
+            </summary>
+        </member>
+        <member name="M:Component1.Circle.#ctor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            gets the parameter for the  circle 
+            </summary>
+            <param name="x"> sets the x-coordinate</param>
+            <param name="y"> sets the y-coordinate</param>
+            <param name="radius"> sets the radius of the circle </param>
+        </member>
+        <member name="M:Component1.Circle.draw(System.Drawing.Graphics)">
+            <summary>
+            draws the circle in the display panel 
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="M:Component1.Circle.set(System.Drawing.Color,System.Int32[])">
+            <summary>
+            accepts the color and sets value for x,y and radius
+            </summary>
+            <param name="c"> gives the color of the circle </param>
+        </member>
+        <member name="T:Component1.Creator">
+            <summary>
+            Class declared as creator
+            </summary>
+        </member>
+        <member name="M:Component1.Creator.getShape(System.String)">
+            <summary>
+            used to pass shape of an object
+            </summary>
+            <param name="ShapeType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Component1.Factory">
+            <summary>
+            class declared as factory
+            </summary>
+        </member>
+        <member name="M:Component1.Factory.getShape(System.String)">
+            <summary>
+            used to pass the shape of an object
+            </summary>
+            <param name="ShapeType"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Component1.Form.counter">
+            <summary>
+            initialization of differnt variables
+            </summary>
+        </member>
+        <member name="M:Component1.Form.browseToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            used to browse the command that were saved 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Component1.Form.closeToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            exits the program 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Component1.Form.helpToolStripMenuItem1_Click(System.Object,System.EventArgs)">
+            <summary>
+            has the document that entails about the program 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Component1.Form.gitToolStripMenuItem1_Click(System.Object,System.EventArgs)">
+            <summary>
+            redirects to github
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Component1.Form.saveToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            used to save the command in specific file 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Component1.Form.txt_execution_command_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Runs the program based on the command line provided in execution box
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Component1.Form.loadShapes">
+            <summary>
+            loads the command in display panel
+            </summary>
+        </member>
+        <member name="M:Component1.Form.commandRun(System.String)">
+            <summary>
+            runs the program after run command is provided
+            </summary>
+            <param name="oneLineCommand"></param>
+        </member>
+        <member name="M:Component1.Form.generateDrawCommand(System.String)">
+            <summary>
+             used for returning the size of the shapes as per the commands provided
+            </summary>
+            <param name="lineOfCommand"></param>
+        </member>
+        <member name="M:Component1.Form.getSize(System.String)">
+            <summary>
+            sets  the size of the shapes based on user input
+            </summary>
+            <param name="lineCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Component1.Form.getIfStartLineNumber">
+            <summary>
+            Initiate whether if statement is present in the commands given in the command box
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Component1.Form.getEndifEndLineNumber">
+            <summary>
+            Checks if if statement ended with endif statement
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Component1.Form.getLoopStartLineNumber">
+            <summary>
+            Initiates loop as per command given in the command box 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Component1.Form.getLoopEndLineNumber">
+            <summary>
+            Checks if the loop has ended with end loop
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Component1.Form.generateRectangle(System.Int32,System.Int32)">
+            <summary>
+            Draws rectangle based on user input
+            
+            </summary>
+            <param name="width"></param>
+            <param name="height"></param>
+        </member>
+        <member name="M:Component1.Form.generateCircle(System.Int32)">
+            <summary>
+            Draws circle based on user input
+            </summary>
+            <param name="radius"></param>
+        </member>
+        <member name="M:Component1.Form.generateTriangle(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Draws Triangle based on user input
+            </summary>
+            <param name="rBase"></param>
+            <param name="adj"></param>
+            <param name="hyp"></param>
+        </member>
+        <member name="M:Component1.Form.moveTo(System.Int32,System.Int32)">
+            <summary>
+            sets the value of x-axis and y-axis
+            </summary>
+            <param name="toX">x-coordinate</param>
+            <param name="toY"> y- coordinate</param>
+        </member>
+        <member name="M:Component1.Form.drawTo(System.Int32,System.Int32)">
+            <summary>
+            sets the position of the x and y axis
+            </summary>
+            <param name="toX"> x-axis</param>
+            <param name="toY">y-axis </param>
+        </member>
+        <member name="F:Component1.Form.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Component1.Form.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Component1.Form.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Component1.IBasicShapes">
+            <summary>
+            used to provide shape of objects
+            </summary>
+        </member>
+        <member name="M:Component1.IBasicShapes.set(System.Drawing.Color,System.Int32[])">
+            <summary>
+            sets the color and  value of the shapes 
+            </summary>
+            <param name="c"></param>
+            <param name="list"></param>
+        </member>
+        <member name="M:Component1.IBasicShapes.draw(System.Drawing.Graphics)">
+            <summary>
+            draws the shape of an object
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="M:Component1.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:Component1.Rectangle">
+            <summary>
+            class declared as rectangle 
+            </summary>
+        </member>
+        <member name="M:Component1.Rectangle.#ctor">
+            <summary>
+            sets the width and height of the rectangle
+            </summary>
+        </member>
+        <member name="M:Component1.Rectangle.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            sets  the value of x-axis, y-axis, width nad height of rectangle
+            </summary>
+            <param name="x">x-coordinate</param>
+            <param name="y">y-coordinate </param>
+            <param name="width"> width of rectangele</param>
+            <param name="height"> height of rectangle</param>
+        </member>
+        <member name="M:Component1.Rectangle.draw(System.Drawing.Graphics)">
+            <summary>
+            used to draw rectangle
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="M:Component1.Rectangle.set(System.Drawing.Color,System.Int32[])">
+            <summary>
+            provides the color and parameters
+            </summary>
+            <param name="c"> color</param>
+            <param name="list"> List of parameters</param>
+        </member>
+        <member name="F:Component1.SyntaxValidation.isValidCommand">
+            <summary>
+            validates the input provided by the end-user
+            
+            </summary>
+        </member>
+        <member name="M:Component1.SyntaxValidation.#ctor(System.Windows.Forms.TextBox)">
+            <summary>
+             checks the commands provided in the command box
+            </summary>
+            <param name="txtCommand">used to get commands input by the user</param>
+        </member>
+        <member name="M:Component1.SyntaxValidation.checkLineValidation(System.String)">
+            <summary>
+            checks each line to ensure whether the commands input by the users contain those commands 
+            </summary>
+            <param name="lineOfCommand"></param>
+        </member>
+        <member name="M:Component1.SyntaxValidation.checkIfVariableDefined(System.String)">
+            <summary>
+            to check whether the variable is defined or not
+            </summary>
+            <param name="variable">used to get the variables input by the user</param>
+        </member>
+        <member name="M:Component1.SyntaxValidation.checkLoopAndIfValidation">
+            <summary>
+            used to check the loop and if statement validation
+            </summary>
+        </member>
+        <member name="T:Component1.Triangle">
+            <summary>
+            class declared as triangle and implements interface 
+            </summary>
+        </member>
+        <member name="F:Component1.Triangle.xcordinate1">
+            <summary>
+            sets the values for sides of triangle 
+            </summary>
+        </member>
+        <member name="F:Component1.Triangle.ycordinate1">
+            <summary>
+            sets the values for sides of triangle 
+            </summary>
+        </member>
+        <member name="F:Component1.Triangle.xcordinate2">
+            <summary>
+            sets the values for sides of triangle 
+            </summary>
+        </member>
+        <member name="F:Component1.Triangle.ycordinate2">
+            <summary>
+            sets the values for sides of triangle 
+            </summary>
+        </member>
+        <member name="F:Component1.Triangle.xcordinate3">
+            <summary>
+            sets the values for sides of triangle 
+            </summary>
+        </member>
+        <member name="F:Component1.Triangle.ycordinate3">
+            <summary>
+            sets the values for sides of triangle 
+            </summary>
+        </member>
+        <member name="F:Component1.Triangle.xcordinate4">
+            <summary>
+            sets the values for sides of triangle 
+            </summary>
+        </member>
+        <member name="F:Component1.Triangle.ycordinate4">
+            <summary>
+            sets the values for sides of triangle 
+            </summary>
+        </member>
+        <member name="F:Component1.Triangle.xcordinate5">
+            <summary>
+            sets the values for sides of triangle 
+            </summary>
+        </member>
+        <member name="F:Component1.Triangle.ycordinate5">
+            <summary>
+            sets the values for sides of triangle 
+            </summary>
+        </member>
+        <member name="F:Component1.Triangle.xcordinate6">
+            <summary>
+            sets the values for sides of triangle 
+            </summary>
+        </member>
+        <member name="F:Component1.Triangle.ycordinate6">
+            <summary>
+            sets the values for sides of triangle 
+            </summary>
+        </member>
+        <member name="M:Component1.Triangle.draw(System.Drawing.Graphics)">
+            <summary>
+            draws the triangle 
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="M:Component1.Triangle.set(System.Drawing.Color,System.Int32[])">
+            <summary>
+            used to set color and values of different sides of trianle
+            </summary>
+            <param name="c"> Color </param>
+            <param name="list"> List of parameters </param>
+        </member>
+        <member name="T:Component1.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Component1.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Component1.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>
