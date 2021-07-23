@@ -30,3 +30,14 @@ E:\GPLApplication-shreyabaral-77262160\Component1\Component1\obj\Debug\Component
 E:\GPLApplication-shreyabaral-77262160\Component1\Component1\obj\Debug\Component1.csproj.CoreCompileInputs.cache
 E:\GPLApplication-shreyabaral-77262160\Component1\Component1\obj\Debug\Component1.exe
 E:\GPLApplication-shreyabaral-77262160\Component1\Component1\obj\Debug\Component1.pdb
+D:\Final\Component1\bin\Debug\Component1.exe.config
+D:\Final\Component1\bin\Debug\Component1.xml
+D:\Final\Component1\bin\Debug\Component1.exe
+D:\Final\Component1\bin\Debug\Component1.pdb
+D:\Final\Component1\obj\Debug\Component1.csprojAssemblyReference.cache
+D:\Final\Component1\obj\Debug\Component1.Form.resources
+D:\Final\Component1\obj\Debug\Component1.Properties.Resources.resources
+D:\Final\Component1\obj\Debug\Component1.csproj.GenerateResource.cache
+D:\Final\Component1\obj\Debug\Component1.csproj.CoreCompileInputs.cache
+D:\Final\Component1\obj\Debug\Component1.exe
+D:\Final\Component1\obj\Debug\Component1.pdb
